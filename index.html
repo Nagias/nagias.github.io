@@ -1,3 +1,18 @@
+<script type="text/javascript">
+    // Handle GitHub Pages routing
+    (function(l) {
+        if (l.search[21] === '/' ) {
+            var decoded = l.search.slice(1).split('&').map(function(s) { 
+                return s.replace(/~and~/g, '&')
+            }).join('?');
+            window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+            );
+        }
+    }(window.location))
+</script>
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -6,19 +21,6 @@
     <title>Blog Cá Nhân - Chia sẻ kiến thức và trải nghiệm</title>
     <meta name="description" content="Blog cá nhân chia sẻ kiến thức về luyện tập, nghiên cứu khoa học và chiêm tinh học.">
     <link rel="canonical" href="https://nagias.github.io/">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Blog Cá Nhân - Chia sẻ kiến thức và trải nghiệm">
-    <meta property="og:description" content="Blog cá nhân chia sẻ kiến thức về luyện tập, nghiên cứu khoa học và chiêm tinh học.">
-    <meta property="og:url" content="https://nagias.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://nagias.github.io/assets/images/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog Cá Nhân - Chia sẻ kiến thức và trải nghiệm">
-    <meta name="twitter:description" content="Blog cá nhân chia sẻ kiến thức về luyện tập, nghiên cứu khoa học và chiêm tinh học.">
-    <meta name="twitter:image" content="https://nagias.github.io/assets/images/og-image.jpg">
     
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -30,8 +32,8 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="/" class="nav-link active">Trang chủ</a></li>
-                <li><a href="/blog/" class="nav-link">Blog</a></li>
-                <li><a href="/newsletter/" class="nav-link">Newsletter</a></li>
+                <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
             </ul>
         </nav>
     </header>
@@ -43,8 +45,8 @@
                 <h1>Chào mừng đến với Blog Cá Nhân</h1>
                 <p class="hero-subtitle">Chia sẻ kiến thức về luyện tập, nghiên cứu khoa học và chiêm tinh học</p>
                 <div class="hero-cta">
-                    <a href="/blog/" class="btn btn-primary">Khám phá bài viết</a>
-                    <a href="/newsletter/" class="btn btn-secondary">Đăng ký newsletter</a>
+                    <a href="blog/index.html" class="btn btn-primary">Khám phá bài viết</a>
+                    <a href="#newsletter" class="btn btn-secondary">Đăng ký newsletter</a>
                 </div>
             </div>
         </section>
@@ -55,19 +57,19 @@
                 <h2 class="section-title">Chuyên mục</h2>
                 <div class="categories-grid">
                     <div class="category-card">
-                        <h3><a href="/blog/category/luyen-tap/">Luyện Tập - Huyền Thuyền</a></h3>
+                        <h3><a href="blog/category/luyen-tap/index.html">Luyện Tập - Huyền Thuyền</a></h3>
                         <p>Chia sẻ kinh nghiệm luyện tập thể thao, yoga và các phương pháp rèn luyện sức khỏe.</p>
-                        <a href="/blog/category/luyen-tap/" class="btn btn-sm">Xem bài viết</a>
+                        <a href="blog/category/luyen-tap/index.html" class="btn btn-sm">Xem bài viết</a>
                     </div>
                     <div class="category-card">
-                        <h3><a href="/blog/category/khoa-hoc/">Nghiên Cứu Khoa Học</a></h3>
+                        <h3><a href="blog/category/khoa-hoc/index.html">Nghiên Cứu Khoa Học</a></h3>
                         <p>Phân tích và đánh giá các nghiên cứu khoa học mới nhất trong nhiều lĩnh vực.</p>
-                        <a href="/blog/category/khoa-hoc/" class="btn btn-sm">Xem bài viết</a>
+                        <a href="blog/category/khoa-hoc/index.html" class="btn btn-sm">Xem bài viết</a>
                     </div>
                     <div class="category-card">
-                        <h3><a href="/blog/category/chiem-tinh/">Chiêm Tinh - Cung Hoàng Đạo</a></h3>
+                        <h3><a href="blog/category/chiem-tinh/index.html">Chiêm Tinh - Cung Hoàng Đạo</a></h3>
                         <p>Khám phá thế giới chiêm tinh học và cung hoàng đạo cho mục đích giải trí.</p>
-                        <a href="/blog/category/chiem-tinh/" class="btn btn-sm">Xem bài viết</a>
+                        <a href="blog/category/chiem-tinh/index.html" class="btn btn-sm">Xem bài viết</a>
                     </div>
                 </div>
             </div>
@@ -83,3 +85,4 @@
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+

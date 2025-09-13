@@ -564,3 +564,236 @@ html {
     outline: 2px solid var(--color-secondary);
     outline-offset: 2px;
 }
+
+/* ===== THUMBNAIL STYLING ===== */
+
+/* Post card với thumbnail */
+.post-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.post-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover::before {
+    transform: scaleX(1);
+}
+
+.post-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--color-secondary);
+}
+
+/* Thumbnail image */
+.post-thumbnail {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 0;
+}
+
+.post-card:hover .post-thumbnail {
+    transform: scale(1.08);
+}
+
+/* Placeholder thumbnail nếu không có ảnh */
+.post-thumbnail-placeholder {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+    font-size: 4rem;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.post-card:hover .post-thumbnail-placeholder {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Category-specific placeholder colors */
+.placeholder-exercise {
+    background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+    color: #059669;
+}
+
+.placeholder-science {
+    background: linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 100%);
+    color: #7C3AED;
+}
+
+.placeholder-astrology {
+    background: linear-gradient(135deg, #FEF2F2 0%, #FECACA 100%);
+    color: #DC2626;
+}
+
+.post-card:hover .placeholder-exercise {
+    background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+    color: white;
+}
+
+.post-card:hover .placeholder-science {
+    background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+    color: white;
+}
+
+.post-card:hover .placeholder-astrology {
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+    color: white;
+}
+
+/* Responsive thumbnail */
+@media (max-width: 768px) {
+    .post-thumbnail,
+    .post-thumbnail-placeholder {
+        height: 200px;
+    }
+    
+    .post-thumbnail-placeholder {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-thumbnail,
+    .post-thumbnail-placeholder {
+        height: 180px;
+    }
+    
+    .post-thumbnail-placeholder {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== THÊM CSS CHO ẢNH VÀ VIDEO ===== */
+.post-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post-image img:hover {
+    transform: scale(1.02);
+}
+
+.post-image figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    font-style: italic;
+}
+
+.post-video {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.post-video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .post-image img,
+    .post-video video {
+        border-radius: 8px;
+    }
+}
+
+/* ===== HERO IMAGE STYLES ===== */
+.post-hero-image {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive hero image */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image {
+        height: 200px;
+    }
+}
+
+/* Post thumbnail trong danh sách */
+.post-thumbnail {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 0;
+}
+
+.post-card:hover .post-thumbnail {
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    .post-thumbnail {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-thumbnail {
+        height: 180px;
+    }
+}

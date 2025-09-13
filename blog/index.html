@@ -18,8 +18,8 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="/" class="nav-link">Trang chủ</a></li>
-                <li><a href="/blog/" class="nav-link active">Blog</a></li>
-                <li><a href="/newsletter/" class="nav-link">Newsletter</a></li>
+                <li><a href="/blog/index.html" class="nav-link active">Blog</a></li>
+                <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
             </ul>
         </nav>
     </header>
@@ -29,55 +29,87 @@
             <!-- Blog Header -->
             <div class="blog-header">
                 <h1>Blog</h1>
-                <p class="blog-description">Khám phá tất cả bài viết về luyện tập, nghiên cứu khoa học và chiêm tinh học.</p>
+                <p class="blog-description">Khám phá tất cả bài viết về luyện tập, nghiên cứu khoa học và chiêm tinh học với hình ảnh minh họa chi tiết.</p>
             </div>
 
             <!-- Category Filters -->
             <div class="category-filters">
                 <ul class="filter-list">
-                    <li><a href="/blog/" class="filter-link active">Tất cả</a></li>
-                    <li><a href="category/luyen-tap/" class="filter-link">Luyện Tập</a></li>
-                    <li><a href="category/khoa-hoc/" class="filter-link">Nghiên Cứu</a></li>
-                    <li><a href="category/chiem-tinh/" class="filter-link">Chiêm Tinh</a></li>
+                    <li><a href="/blog/index.html" class="filter-link active">Tất cả</a></li>
+                    <li><a href="category/luyen-tap/index.html" class="filter-link">Luyện Tập</a></li>
+                    <li><a href="category/khoa-hoc/index.html" class="filter-link">Nghiên Cứu Khoa Học</a></li>
+                    <li><a href="category/chiem-tinh/index.html" class="filter-link">Chiêm Tinh</a></li>
                 </ul>
             </div>
 
-            <!-- Posts Grid -->
-            <section class="posts-section">
-                <div class="posts-grid">
-                    <article class="post-card">
-                        <div class="post-card-content">
-                            <div class="post-meta">
-                                <span class="post-category category-exercise">Luyện Tập</span>
-                                <time datetime="2025-01-15">15/01/2025</time>
-                            </div>
-                            <h3><a href="posts/huong-dan-luyen-tap.html">Hướng dẫn bắt đầu luyện tập cho người mới</a></h3>
-                            <p>Hướng dẫn chi tiết cho người mới bắt đầu luyện tập thể thao và xây dựng thói quen lành mạnh.</p>
-                            <a href="posts/huong-dan-luyen-tap.html" class="read-more">Đọc tiếp</a>
-                        </div>
-                    </article>
+<!-- Posts Grid -->
+<section class="posts-section">
+    <div class="posts-grid">
+        <!-- Post 1 - Luyện Tập -->
+        <article class="post-card">
+            <!-- DÙNG CÙNG ẢNH HEADER LÀM THUMBNAIL -->
+            <img src="assets/images/luyen-tap/2025-01-15-hero.jpg" 
+                 alt="Hướng dẫn luyện tập cho người mới" 
+                 class="post-thumbnail" 
+                 loading="lazy">
+            <div class="post-card-content">
+                <div class="post-meta">
+                    <span class="post-category category-exercise">Luyện Tập</span>
+                    <time datetime="2025-01-15">15/01/2025</time>
+                </div>
+                <h3><a href="luyen-tap/2025-01-15-huong-dan-bat-dau.html">Hướng dẫn bắt đầu luyện tập cho người mới</a></h3>
+                <p>Hướng dẫn chi tiết với hình ảnh minh họa từng bước cho người mới bắt đầu luyện tập thể thao và xây dựng thói quen lành mạnh.</p>
+                <div class="post-stats">
+                    <span>👀 1,234</span>
+                    <span>📸 5</span>
+                    <span>🎥 2</span>
+                    <span>❤️ 89</span>
+                    <span>💬 23</span>
+                </div>
+                <a href="luyen-tap/2025-01-15-huong-dan-bat-dau.html" class="read-more">Đọc tiếp</a>
+            </div>
+        </article>
 
+
+                    <!-- Post 2 - Khoa Học -->
                     <article class="post-card">
+                        <img src="assets/thumbnails/2025-01-10-khoa-hoc.jpg" alt="Tác động của thiền định lên não bộ" class="post-thumbnail" loading="lazy">
                         <div class="post-card-content">
                             <div class="post-meta">
                                 <span class="post-category category-science">Khoa Học</span>
                                 <time datetime="2025-01-10">10/01/2025</time>
                             </div>
-                            <h3><a href="posts/thien-dinh-nao-bo.html">Tác động của thiền định lên não bộ</a></h3>
-                            <p>Tổng kết các nghiên cứu mới nhất về thiền định và tác động tích cực lên não bộ.</p>
-                            <a href="posts/thien-dinh-nao-bo.html" class="read-more">Đọc tiếp</a>
+                            <h3><a href="khoa-hoc/2025-01-10-thien-dinh-nao-bo.html">Tác động của thiền định lên não bộ</a></h3>
+                            <p>Tổng kết các nghiên cứu mới nhất với hình ảnh scan não bộ, biểu đồ và video hướng dẫn thực hành thiền định từ các chuyên gia.</p>
+                            <div class="post-stats">
+                                <span>👀 980</span>
+                                <span>📸 8</span>
+                                <span>🎥 3</span>
+                                <span>❤️ 67</span>
+                                <span>💬 15</span>
+                            </div>
+                            <a href="khoa-hoc/2025-01-10-thien-dinh-nao-bo.html" class="read-more">Đọc tiếp</a>
                         </div>
                     </article>
 
+                    <!-- Post 3 - Chiêm Tinh -->
                     <article class="post-card">
+                        <img src="assets/thumbnails/2025-01-05-chiem-tinh.jpg" alt="12 cung hoàng đạo và đặc điểm tính cách" class="post-thumbnail" loading="lazy">
                         <div class="post-card-content">
                             <div class="post-meta">
                                 <span class="post-category category-astrology">Chiêm Tinh</span>
                                 <time datetime="2025-01-05">05/01/2025</time>
                             </div>
-                            <h3><a href="posts/12-cung-hoang-dao.html">12 cung hoàng đạo và đặc điểm tính cách</a></h3>
-                            <p>Khám phá 12 cung hoàng đạo và những nét đặc trưng trong tính cách mỗi cung.</p>
-                            <a href="posts/12-cung-hoang-dao.html" class="read-more">Đọc tiếp</a>
+                            <h3><a href="chiem-tinh/2025-01-05-12-cung-hoang-dao.html">12 cung hoàng đạo và đặc điểm tính cách</a></h3>
+                            <p>Khám phá 12 cung hoàng đạo với hình ảnh vòng tròn zodiac đẹp mắt, sao đồ chi tiết và video giải thích từng cung hoàng đạo.</p>
+                            <div class="post-stats">
+                                <span>👀 1,450</span>
+                                <span>📸 12</span>
+                                <span>🎥 1</span>
+                                <span>❤️ 112</span>
+                                <span>💬 34</span>
+                            </div>
+                            <a href="chiem-tinh/2025-01-05-12-cung-hoang-dao.html" class="read-more">Đọc tiếp</a>
                         </div>
                     </article>
                 </div>
