@@ -1,28 +1,14 @@
-<script type="text/javascript">
-    // Handle GitHub Pages routing
-    (function(l) {
-        if (l.search[21] === '/' ) {
-            var decoded = l.search.slice(1).split('&').map(function(s) { 
-                return s.replace(/~and~/g, '&')
-            }).join('?');
-            window.history.replaceState(null, null,
-                l.pathname.slice(0, -1) + decoded + l.hash
-            );
-        }
-    }(window.location))
-</script>
-
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Cá Nhân - Chia sẻ kiến thức và trải nghiệm</title>
-    <meta name="description" content="Blog cá nhân chia sẻ kiến thức về luyện tập, nghiên cứu khoa học và chiêm tinh học.">
-    <link rel="canonical" href="https://nagias.github.io/">
+    <title>Kỹ năng quan trọng bậc nhất kỷ nguyên "rối loạn thông tin" - Học cách học| Vincent Nguyen</title>
+    <meta name="description" content="Hướng dẫn chi tiết cho người mới bắt đầu luyện tập thể thao và xây dựng thói quen lành mạnh.">
+    <link rel="canonical" href="https://nagias.github.io/blog/luyen-tap/2025-09-13-ky-nang-quan-trong-nhat-the-ky-21-hoc-cach-hoc.html">
     
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/blog-style.css">
 </head>
 <body>
     <header class="header">
@@ -31,134 +17,86 @@
                 <a href="/" class="logo">Vincent Nguyen</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="/" class="nav-link active">Trang chủ</a></li>
-                <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="/" class="nav-link">Trang chủ</a></li>
+                <li><a href="/blog/index.html" class="nav-link active">Blog</a></li>
                 <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Chào mừng, bạn đã lạc vào thế giới của tôi - Vincent</h1>
-                <p class="hero-subtitle">Đây là nơi tôi luyên thuyên về kiến thức nghiên cứu khoa học, chiêm tinh và những bài học cột sống...</p>
-                <div class="hero-cta">
-                    <a href="blog/index.html" class="btn btn-primary">Khám phá bài viết</a>
-                    <a href="#newsletter" class="btn btn-secondary">Đăng ký newsletter</a>
-                </div>
-            </div>
-        </section>
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb container">
+            <ol class="breadcrumb-list">
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/blog/index.html">Blog</a></li>
+                <li><a href="/blog/category/luyen-tap/index.html">Luyên tha luyên thuyên</a></li>
+                <li aria-current="page">Kỹ năng quan trọng bậc nhất kỷ nguyên "rối loạn thông tin" - Học cách học </li>
+            </ol>
+        </nav>
 
-        <!-- Categories Section -->
-        <section class="categories section">
-            <div class="container">
-                <h2 class="section-title">Chuyên mục</h2>
-                <div class="categories-grid">
-                    <div class="category-card">
-                        <h3><a href="blog/category/luyen-tap/index.html">Luyên tha luyên thuyên </a></h3>
-                        <p>"Hôm nay tôi học được cái này hay lắm, tôi sẽ chia sẻ tại đây"</p>
-                        <a href="blog/category/luyen-tap/index.html" class="btn btn-sm">Xem bài viết</a>
-                    </div>
-                    <div class="category-card">
-                        <h3><a href="blog/category/khoa-hoc/index.html">Academic Evidence-Based</a></h3>
-                        <p>"Công trình nghiên cứu khoa học này mở ra một kiến thức mới cho tôi."</p>
-                        <a href="blog/category/khoa-hoc/index.html" class="btn btn-sm">Xem bài viết</a>
-                    </div>
-                    <div class="category-card">
-                        <h3><a href="blog/category/chiem-tinh/index.html">Astrology - Horoscope</a></h3>
-                        <p>"Thấu hiểu con người thông qua công cụ huyền học"</p>
-                        <a href="blog/category/chiem-tinh/index.html" class="btn btn-sm">Xem bài viết</a>
-                    </div>
+<article class="post-single container">
+    <header class="post-header">
+        <div class="post-meta" style="justify-content: center; margin-bottom: 2rem;">
+            <span class="post-category category-exercise">Luyên tha luyên thuyên</span>
+            <time datetime="2025-09-13">13/09/2025</time>
+        </div>
+        <h1 class="post-title">Kỹ năng quan trọng bậc nhất kỷ nguyên "rối loạn thông tin" - Học cách học</h1>
+        <p style="font-size: 1.2rem; color: var(--color-muted); margin-bottom: 2rem;">Bàn luận về kỹ năng học cách học, học thế nào cho đúng, có phải cứ nhiều thông tin, nhiều nguồn là học sẽ hiệu quả không? Câu trả lời thật ra là có và không ^^ Hãy cùng thảo luận bên dưới nhé</p>
+        
+        <!-- ẢNH HEADER CHÍNH -->
+        <div class="post-hero-image">
+            <img src="../assets/images/luyen-tap/2025-09-13-hero.jpg" 
+                 alt="Kỹ năng quan trọng bậc nhất kỷ nguyên rối loạn thông tin - Học cách học" 
+                 class="hero-image">
+        </div>
+    </header>
+            
+<div class="post-content">
+    <p>Đã bao giờ bạn cố gắng học một cái gì đó, tài liệu đầy đủ vô cùng nhưng cuối cùng lại không học được gì chưa? </p>
+    
+    <!-- ẢNH THU NHỎ -->
+    <div style="text-align: center; margin: 2rem 0;">
+        <img src="../assets/images/luyen-tap/2025-09-13-des1.jpg" 
+             alt="Học không vào" 
+             style="width: 350px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="font-style: italic; color: #666; margin-top: 0.5rem;">Quá nhiều thông tin khiến bạn không biết nên chọn thông tin nào</p>
+    </div>
+
+ <p> Tại sao chúng ta đang sống trong một thế giới không hề thiếu thông tin, phương pháp... mà học vẫn không vào? Và đấy chính là lý do.</p> <br>
+
+ <p>Nghe thì ngược đời, nhưng thực chất nó là như vậy. Bạn có thể tìm thấy 7749 cách để học tiếng Anh, nhưng bạn lại không bao giờ ngồi xuống bàn để follow theo 1 cách học duy nhất. Thứ bạn tìm sẽ là phương pháp, thứ bạn thiếu chính là thực hành. </p> <br>
+
+<p>Cuối cùng, kỹ năng của bạn cũng được cải thiện, nhưng nó thật hỗn tạp. Mỗi thứ biết một ít, ngoài việc nêu được tên và nghe "ồ mình biết cái này" nhưng hỏi sâu vào thì mù tịt.</p> <br>
+
+<p>Và đây chính là mình của ngày trước. Thứ mình thiếu chính là sự kỷ luật và kiên trì. Vì thế hiện tại thay vì tìm phương pháp, mình thực hành. Thay vì bắt đầu với các phương pháp mới lạ, mình follow theo 1-3 phương pháp, lặp đi lặp lại cho đến khi lên trình độ.</p> <br>
+
+<p> Như vậy chúng ta cần hashtag#kiên_trì hashtag#kỷ_luật và hashtag#sự_lặp_lại. Đây mới thật sự là kỹ năng cần trong thời đại massive và messy information. </p><br>
+
+<p> Xưa mình thấy có workshop về Học cách học, mình nghĩ "workshop gì trông cứ ảo ảo thế nhỉ?". Giờ thì mình mới hiểu, cái gì cũng có giá của nó.</p><br>
+
+    <h2>Video hướng dẫn khởi động</h2>
+    <p>Xem video hướng dẫn các động tác khởi động cơ bản:</p>
+    
+    <!-- VIDEO ĐÃ FIX -->
+    <div style="text-align: center; margin: 2rem 0;">
+        <video width="400" height="300" controls>
+    <source src="../assets/videos/luyen-tap/2025-01-15-warmup.mp4" type="video/mp4">
+         Video không play được
+        </video>
+        <p style="font-style: italic; color: #666; margin-top: 0.5rem;">Video demo tính năng chứ không liên quan tới bài viết</p>
+    </div>
+
+            <footer style="text-align: center; margin: 3rem 0; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="/blog/category/luyen-tap/index.html" style="color: var(--color-primary); font-weight: 600;">← Luyên tha luyên thuyên</a>
+                    <a href="/blog/index.html" style="color: var(--color-primary); font-weight: 600;">Tất cả bài viết</a>
                 </div>
-            </div>
-        </section>
+            </footer>
+        </article>
     </main>
 
-<!-- Newsletter Subscription Section -->
-<section class="newsletter-section">
-    <div class="newsletter-container">
-        <h2>📧 Đăng Ký Newsletter</h2>
-        <p>Nhận thông báo về các bài viết mới nhất và tips hữu ích!</p>
-        <form class="newsletter-form" action="#" method="POST">
-            <div class="input-group">
-                <input type="email" id="email" name="email" placeholder="Nhập email của bạn..." required>
-                <button type="submit">Đăng Ký</button>
-            </div>
-            <small>Chúng tôi cam kết không spam và bảo vệ thông tin cá nhân của bạn.</small>
-        </form>
-    </div>
-</section>
-
-<!-- Popular Blogs Section -->
-<section class="popular-blogs-section">
-    <div class="popular-container">
-        <h2>🔥 Blog Được Đọc Nhiều Nhất</h2>
-        <div class="popular-blogs-grid">
-            <article class="popular-blog-card">
-                <div class="blog-rank">1</div>
-                <div class="blog-content">
-                    <h3>Hướng dẫn Frontend Development 2025</h3>
-                    <p>Tổng hợp kiến thức cần thiết cho Frontend Developer hiện đại...</p>
-                    <div class="blog-stats">
-                        <span class="views">👁️ 15,420 lượt xem</span>
-                        <span class="date">📅 15/08/2025</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="popular-blog-card">
-                <div class="blog-rank">2</div>
-                <div class="blog-content">
-                    <h3>SEO Technical cho Website 2025</h3>
-                    <p>Các kỹ thuật SEO hiệu quả để tối ưu hóa website của bạn...</p>
-                    <div class="blog-stats">
-                        <span class="views">👁️ 12,890 lượt xem</span>
-                        <span class="date">📅 22/08/2025</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="popular-blog-card">
-                <div class="blog-rank">3</div>
-                <div class="blog-content">
-                    <h3>React Performance Optimization</h3>
-                    <p>Tối ưu hóa hiệu suất ứng dụng React cho tốc độ tối đa...</p>
-                    <div class="blog-stats">
-                        <span class="views">👁️ 9,650 lượt xem</span>
-                        <span class="date">📅 10/09/2025</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="popular-blog-card">
-                <div class="blog-rank">4</div>
-                <div class="blog-content">
-                    <h3>CSS Grid vs Flexbox - So sánh chi tiết</h3>
-                    <p>Khi nào nên dùng Grid, khi nào nên dùng Flexbox...</p>
-                    <div class="blog-stats">
-                        <span class="views">👁️ 8,320 lượt xem</span>
-                        <span class="date">📅 05/09/2025</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="popular-blog-card">
-                <div class="blog-rank">5</div>
-                <div class="blog-content">
-                    <h3>JavaScript ES2025 - Tính năng mới</h3>
-                    <p>Khám phá các tính năng mới nhất trong JavaScript ES2025...</p>
-                    <div class="blog-stats">
-                        <span class="views">👁️ 7,880 lượt xem</span>
-                        <span class="date">📅 01/09/2025</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-<!-- CSS cho Carousel -->
+    <!-- CSS cho Carousel -->
 <style>
 /* Blog Carousel Horizontal */
 .blog-carousel-horizontal {
@@ -447,6 +385,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Blog Cá Nhân. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+    <script src="../../assets/js/main.js" defer></script>
 
 </body>
 </html>
