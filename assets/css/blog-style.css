@@ -797,3 +797,22 @@ html {
         height: 180px;
     }
 }
+
+/* Style cho links trong blog */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5a6fd8;
+    text-decoration: underline;
+}
+
+/* Link mở tab mới */
+a[target="_blank"]:after {
+    content: " ↗";
+    font-size: 0.8em;
+}
